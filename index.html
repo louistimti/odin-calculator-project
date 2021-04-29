@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8" />
+    <meta name="Author" content="Name of author" />
+    <meta name="description" content="Search Brief summary" />
+    <meta name="keywords" content="html, css, javascript" />
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon-16x16.png"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+
+    <script src="js/scripts.js" defer></script>
+
+    <!-- <style>
+            p {
+                color: blue;
+            }
+        </style> -->
+
+    <!-- <script>
+            //Your javascript code should be below here
+
+            
+        </script> -->
+  </head>
+  <body>
+    <div class="calculator-body">
+      <div class="header">
+        <h1>CALCULATOR-PROTO</h1>
+      </div>
+      <div class="calculator-main-body">
+        <div class="display-div">
+          <input type="text" name="calc-display" id="display" />
+        </div>
+        <div class="input-div">
+          <div class="first-four-numbers-div">
+            <button onclick="insertValue(1)">1</button>
+            <button onclick="insertValue(2)">2</button>
+            <button onclick="insertValue(3)">3</button>
+            <button onclick="insertValue(4)">4</button>
+          </div>
+          <div class="next-four-numbers-div">
+            <button onclick="insertValue(5)">5</button>
+            <button onclick="insertValue(6)">6</button>
+            <button onclick="insertValue(7)">7</button>
+            <button onclick="insertValue(8)">8</button>
+          </div>
+          <div class="final-numbers-div">
+            <button onclick="insertValue(9)">9</button>
+            <button onclick="insertValue(0)">0</button>
+            <button onclick="insertValue('.')">.</button>
+          </div>
+          <div class="symbols-div">
+            <button onclick="assignOperator('+')">+</button>
+            <button onclick="assignOperator('-')">-</button>
+            <button onclick="assignOperator('*')">*</button>
+            <button onclick="assignOperator('/')">/</button>
+          </div>
+          <div class="equals-div">
+            <button onclick="equalize()">=</button>
+            <button onclick="clean()">clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

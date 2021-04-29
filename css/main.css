@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+  flex-direction: column;
+}
+
+div.calculator-body {
+  /* background-color: teal; */
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 320px;
+  height: 410px;
+}
+
+h1 {
+  font-size: larger;
+  letter-spacing: 4px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+div.header {
+  height: 40px;
+  /* background-color: blanchedalmond; */
+}
+
+div.display-div {
+  height: 80px;
+  /* background-color: cadetblue; */
+}
+
+body,
+.header,
+.display-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-four-numbers-div,
+.next-four-numbers-div,
+.final-numbers-div,
+.symbols-div,
+.equals-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-four-numbers-div,
+.next-four-numbers-div,
+.final-numbers-div,
+.symbols-div,
+.equals-div {
+  height: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* .first-four-numbers-div {
+  background-color: cornsilk;
+}
+
+.next-four-numbers-div {
+  background-color: darkgray;
+}
+
+.final-numbers-div {
+  background-color: greenyellow;
+}
+
+.symbols-div {
+  background-color: hotpink;
+}
+
+.equals-div {
+  background-color: olivedrab;
+} */
+
+button {
+  width: 50px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 3px #999;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:active {
+  background-color: gray;
+  box-shadow: 0 1px #999;
+  -webkit-box-shadow: 0 1px #999;
+  transform: translateY(2px);
+}
+
+#display {
+  border: 2px solid black;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: right;
+  padding-right: 6px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#display:focus {
+  outline: none;
+}
+
+.equals-div > button {
+  width: 75px;
+}
